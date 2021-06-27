@@ -1,0 +1,363 @@
+aleks@DESKTOP-IAEL188:/mnt/c/Users/aleks/eclipse-workspace/ECSE427A1$ ltrace ./test
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7f5999600c0a)                                            = 0
+signal(SIGTSTP, 0x7f5999600c24)                                           = 0
+getline(0x7fffd1a9bea8, 0x7fffd1a9beb0, 0x7f5998feba00, 0x7fffd1a9beb0Input: echo hello
+)   = 11
+strtok("echo hello\n", "\n")                                              = "echo hello"
+strcasecmp("echo hello", "Y")                                             = -20
+strcasecmp("echo hello", "y")                                             = -20
+strlen("echo hello")                                                      = 10
+strcasecmp("echo hello", "\n")                                            = 91
+strdup("echo hello")                                                      = 0x7fffc913a700
+strtok_r(0x7fffc913a470, 0x7f599960141c, 0x7fffd1a9be60, 0x7fffc913a700)  = 0x7fffc913a470
+strtok_r(0x7fffc913a475, 0x7f599960141c, 0x7fffd1a9be60, 4)               = 0x7fffc913a475
+strtok_r(0x7fffc913a47a, 0x7f599960141c, 0x7fffd1a9be60, 5)               = 0
+strcasecmp("echo", "limit")                                               = -7
+strcasecmp("echo", "cd")                                                  = 2
+strcasecmp("echo", "chdir")                                               = 2
+strcasecmp("echo", "history")                                             = -3
+fork()                                                                    = 24
+wait(0hello
+ <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 24
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7f5999600c0a)                                            = 0x7f5999600c0a
+signal(SIGTSTP, 0x7f5999600c24)                                           = 0x7f5999600c24
+getline(0x7fffd1a9bea8, 0x7fffd1a9beb0, 0x7f5998feba00, 0x7fffd1a9beb0Input: ls
+)   = 3
+strtok("ls\n", "\n")                                                      = "ls"
+strcasecmp("ls", "Y")                                                     = -13
+strcasecmp("ls", "y")                                                     = -13
+strlen("ls")                                                              = 2
+strcasecmp("ls", "\n")                                                    = 98
+strdup("ls")                                                              = 0x7fffc913a7a0
+strtok_r(0x7fffc913a720, 0x7f599960141c, 0x7fffd1a9be60, 0x7fffc913a7a0)  = 0x7fffc913a720
+strtok_r(0x7fffc913a722, 0x7f599960141c, 0x7fffd1a9be60, 2)               = 0
+strcasecmp("ls", "limit")                                                 = 10
+strcasecmp("ls", "cd")                                                    = 9
+strcasecmp("ls", "chdir")                                                 = 9
+strcasecmp("ls", "history")                                               = 4
+fork()                                                                    = 25
+wait(0EgeShell.o     ass1SolMimi.tar    input1.txt          manual_test002.txt  shell.h        smallShell.c  tshell.c
+ThomasShell.c  change           interpreter.c       script.txt          shellmemory.c  test          world
+TreShell.c     hel              interpreter.h       shell               shellmemory.h  test.txt
+a.out          hello            manual_test001.txt  shell.c             smallShell     tinyshell.c
+ <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 25
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7f5999600c0a)                                            = 0x7f5999600c0a
+signal(SIGTSTP, 0x7f5999600c24)                                           = 0x7f5999600c24
+getline(0x7fffd1a9bea8, 0x7fffd1a9beb0, 0x7f5998feba00, 0x7fffd1a9beb0Input: cd change
+)   = 10
+strtok("cd change\n", "\n")                                               = "cd change"
+strcasecmp("cd change", "Y")                                              = -22
+strcasecmp("cd change", "y")                                              = -22
+strlen("cd change")                                                       = 9
+strcasecmp("cd change", "\n")                                             = 89
+strdup("cd change")                                                       = 0x7fffc913a840
+strtok_r(0x7fffc913a7c0, 0x7f599960141c, 0x7fffd1a9be60, 0x7fffc913a840)  = 0x7fffc913a7c0
+strtok_r(0x7fffc913a7c3, 0x7f599960141c, 0x7fffd1a9be60, 2)               = 0x7fffc913a7c3
+strtok_r(0x7fffc913a7c9, 0x7f599960141c, 0x7fffd1a9be60, 6)               = 0
+strcasecmp("cd", "limit")                                                 = -9
+strcasecmp("cd", "cd")                                                    = 0
+chdir("change")                                                           = 0
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7f5999600c0a)                                            = 0x7f5999600c0a
+signal(SIGTSTP, 0x7f5999600c24)                                           = 0x7f5999600c24
+getline(0x7fffd1a9bea8, 0x7fffd1a9beb0, 0x7f5998feba00, 0x7fffd1a9beb0Input: ls
+)   = 3
+strtok("ls\n", "\n")                                                      = "ls"
+strcasecmp("ls", "Y")                                                     = -13
+strcasecmp("ls", "y")                                                     = -13
+strlen("ls")                                                              = 2
+strcasecmp("ls", "\n")                                                    = 98
+strdup("ls")                                                              = 0x7fffc913a8e0
+strtok_r(0x7fffc913a860, 0x7f599960141c, 0x7fffd1a9be60, 0x7fffc913a8e0)  = 0x7fffc913a860
+strtok_r(0x7fffc913a862, 0x7f599960141c, 0x7fffd1a9be60, 2)               = 0
+strcasecmp("ls", "limit")                                                 = 10
+strcasecmp("ls", "cd")                                                    = 9
+strcasecmp("ls", "chdir")                                                 = 9
+strcasecmp("ls", "history")                                               = 4
+fork()                                                                    = 26
+wait(0changefurther
+ <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 26
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7f5999600c0a)                                            = 0x7f5999600c0a
+signal(SIGTSTP, 0x7f5999600c24)                                           = 0x7f5999600c24
+getline(0x7fffd1a9bea8, 0x7fffd1a9beb0, 0x7f5998feba00, 0x7fffd1a9beb0Input: cd changefurther^[[D^[[D^[[D^[[D^[[D^[[D^[[^Z
+[1]+  Stopped                 ltrace ./test
+aleks@DESKTOP-IAEL188:/mnt/c/Users/aleks/eclipse-workspace/ECSE427A1$ ltrace ./test
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: echo hello
+)   = 11
+strtok("echo hello\n", "\n")                                              = "echo hello"
+strcasecmp("echo hello", "Y")                                             = -20
+strcasecmp("echo hello", "y")                                             = -20
+strlen("echo hello")                                                      = 10
+strcasecmp("echo hello", "\n")                                            = 91
+strdup("echo hello")                                                      = 0x7fffe3657700
+strtok_r(0x7fffe3657470, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657700)  = 0x7fffe3657470
+strtok_r(0x7fffe3657475, 0x7ffc3520141c, 0x7fffeaf8d640, 4)               = 0x7fffe3657475
+strtok_r(0x7fffe365747a, 0x7ffc3520141c, 0x7fffeaf8d640, 5)               = 0
+strcasecmp("echo", "limit")                                               = -7
+strcasecmp("echo", "cd")                                                  = 2
+strcasecmp("echo", "chdir")                                               = 2
+strcasecmp("echo", "history")                                             = -3
+fork()                                                                    = 29
+wait(0hello
+ <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 29
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: ls
+)   = 3
+strtok("ls\n", "\n")                                                      = "ls"
+strcasecmp("ls", "Y")                                                     = -13
+strcasecmp("ls", "y")                                                     = -13
+strlen("ls")                                                              = 2
+strcasecmp("ls", "\n")                                                    = 98
+strdup("ls")                                                              = 0x7fffe36577a0
+strtok_r(0x7fffe3657720, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe36577a0)  = 0x7fffe3657720
+strtok_r(0x7fffe3657722, 0x7ffc3520141c, 0x7fffeaf8d640, 2)               = 0
+strcasecmp("ls", "limit")                                                 = 10
+strcasecmp("ls", "cd")                                                    = 9
+strcasecmp("ls", "chdir")                                                 = 9
+strcasecmp("ls", "history")                                               = 4
+fork()                                                                    = 30
+wait(0EgeShell.o     ass1SolMimi.tar    input1.txt          manual_test002.txt  shell.h        smallShell.c  tshell.c
+ThomasShell.c  change           interpreter.c       script.txt          shellmemory.c  test          world
+TreShell.c     hel              interpreter.h       shell               shellmemory.h  test.txt
+a.out          hello            manual_test001.txt  shell.c             smallShell     tinyshell.c
+ <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 30
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: cd change
+)   = 10
+strtok("cd change\n", "\n")                                               = "cd change"
+strcasecmp("cd change", "Y")                                              = -22
+strcasecmp("cd change", "y")                                              = -22
+strlen("cd change")                                                       = 9
+strcasecmp("cd change", "\n")                                             = 89
+strdup("cd change")                                                       = 0x7fffe3657840
+strtok_r(0x7fffe36577c0, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657840)  = 0x7fffe36577c0
+strtok_r(0x7fffe36577c3, 0x7ffc3520141c, 0x7fffeaf8d640, 2)               = 0x7fffe36577c3
+strtok_r(0x7fffe36577c9, 0x7ffc3520141c, 0x7fffeaf8d640, 6)               = 0
+strcasecmp("cd", "limit")                                                 = -9
+strcasecmp("cd", "cd")                                                    = 0
+chdir("change")                                                           = 0
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: chdir changefurther
+)   = 20
+strtok("chdir changefurther\n", "\n")                                     = "chdir changefurther"
+strcasecmp("chdir changefurther", "Y")                                    = -22
+strcasecmp("chdir changefurther", "y")                                    = -22
+strlen("chdir changefurther")                                             = 19
+strcasecmp("chdir changefurther", "\n")                                   = 89
+strdup("chdir changefurther")                                             = 0x7fffe36578e0
+strtok_r(0x7fffe3657860, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe36578e0)  = 0x7fffe3657860
+strtok_r(0x7fffe3657866, 0x7ffc3520141c, 0x7fffeaf8d640, 5)               = 0x7fffe3657866
+strtok_r(0x7fffe3657873, 0x7ffc3520141c, 0x7fffeaf8d640, 3)               = 0
+strcasecmp("chdir", "limit")                                              = -9
+strcasecmp("chdir", "cd")                                                 = 4
+strcasecmp("chdir", "chdir")                                              = 0
+chdir("changefurther")                                                    = 0
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: ls
+)   = 3
+strtok("ls\n", "\n")                                                      = "ls"
+strcasecmp("ls", "Y")                                                     = -13
+strcasecmp("ls", "y")                                                     = -13
+strlen("ls")                                                              = 2
+strcasecmp("ls", "\n")                                                    = 98
+strdup("ls")                                                              = 0x7fffe3657980
+strtok_r(0x7fffe3657900, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657980)  = 0x7fffe3657900
+strtok_r(0x7fffe3657902, 0x7ffc3520141c, 0x7fffeaf8d640, 2)               = 0
+strcasecmp("ls", "limit")                                                 = 10
+strcasecmp("ls", "cd")                                                    = 9
+strcasecmp("ls", "chdir")                                                 = 9
+strcasecmp("ls", "history")                                               = 4
+fork()                                                                    = 31
+wait(0 <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 31
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: limit
+)   = 6
+strtok("limit\n", "\n")                                                   = "limit"
+strcasecmp("limit", "Y")                                                  = -13
+strcasecmp("limit", "y")                                                  = -13
+strlen("limit")                                                           = 5
+strcasecmp("limit", "\n")                                                 = 98
+strdup("limit")                                                           = 0x7fffe3657a20
+strtok_r(0x7fffe36579a0, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657a20)  = 0x7fffe36579a0
+strtok_r(0x7fffe36579a5, 0x7ffc3520141c, 0x7fffeaf8d640, 5)               = 0
+strcasecmp("limit", "limit")                                              = 0
+getrlimit(2, 0x7ffc35402380, 1, 0)                                        = 0
+printf("The current limit is: %lu \n", 18446744073709551615The current limit is: 18446744073709551615
+)              = 44
+printf("The maximum limit is: %lu \n", 18446744073709551615The maximum limit is: 18446744073709551615
+)              = 44
+strcasecmp("limit", "cd")                                                 = 9
+strcasecmp("limit", "chdir")                                              = 9
+strcasecmp("limit", "history")                                            = 4
+fork()                                                                    = 32
+wait(0 <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 32
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: limit 800
+)   = 10
+strtok("limit 800\n", "\n")                                               = "limit 800"
+strcasecmp("limit 800", "Y")                                              = -13
+strcasecmp("limit 800", "y")                                              = -13
+strlen("limit 800")                                                       = 9
+strcasecmp("limit 800", "\n")                                             = 98
+strdup("limit 800")                                                       = 0x7fffe3657ac0
+strtok_r(0x7fffe3657a40, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657ac0)  = 0x7fffe3657a40
+strtok_r(0x7fffe3657a46, 0x7ffc3520141c, 0x7fffeaf8d640, 5)               = 0x7fffe3657a46
+strtok_r(0x7fffe3657a49, 0x7ffc3520141c, 0x7fffeaf8d640, 3)               = 0
+strcasecmp("limit", "limit")                                              = 0
+atoi(0x7fffe3657a46, 2, 2, 0\)                                             = 800
+atoi(0x7fffe3657a46, 0x7fffe3657a48, 0, 0x1999999999999999)               = 800
+setrlimit(2, 0x7ffc35402380, 0, 0x1999999999999999)                       = 0
+puts("Limit has been successfully set"Limit has been successfully set
+)                                   = 32
+strcasecmp("limit", "cd")                                                 = 9
+strcasecmp("limit", "chdir")                                              = 9
+strcasecmp("limit", "history")                                            = 4
+fork()                                                                    = 33
+wait(0 <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 33
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: limit 500 500
+)   = 15
+strtok("\\limit 500 500\n", "\n")                                         = "\\limit 500 500"
+strcasecmp("\\limit 500 500", "Y")                                        = -29
+strcasecmp("\\limit 500 500", "y")                                        = -29
+strlen("\\limit 500 500")                                                 = 14
+strcasecmp("\\limit 500 500", "\n")                                       = 82
+strdup("\\limit 500 500")                                                 = 0x7fffe3657b60
+strtok_r(0x7fffe3657ae0, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657b60)  = 0x7fffe3657ae0
+strtok_r(0x7fffe3657ae7, 0x7ffc3520141c, 0x7fffeaf8d640, 6)               = 0x7fffe3657ae7
+strtok_r(0x7fffe3657aeb, 0x7ffc3520141c, 0x7fffeaf8d640, 3)               = 0x7fffe3657aeb
+strtok_r(0x7fffe3657aee, 0x7ffc3520141c, 0x7fffeaf8d640, 3)               = 0
+strcasecmp("\\limit", "limit")                                            = -16
+strcasecmp("\\limit", "cd")                                               = -7
+strcasecmp("\\limit", "chdir")                                            = -7
+strcasecmp("\\limit", "history")                                          = -12
+fork()                                                                    = 34
+wait(0 <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 34
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: limit
+)   = 6
+strtok("limit\n", "\n")                                                   = "limit"
+strcasecmp("limit", "Y")                                                  = -13
+strcasecmp("limit", "y")                                                  = -13
+strlen("limit")                                                           = 5
+strcasecmp("limit", "\n")                                                 = 98
+strdup("limit")                                                           = 0x7fffe3657c00
+strtok_r(0x7fffe3657b80, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657c00)  = 0x7fffe3657b80
+strtok_r(0x7fffe3657b85, 0x7ffc3520141c, 0x7fffeaf8d640, 5)               = 0
+strcasecmp("limit", "limit")                                              = 0
+getrlimit(2, 0x7ffc35402380, 1, 0)                                        = 0
+printf("The current limit is: %lu \n", 800The current limit is: 800
+)                               = 27
+printf("The maximum limit is: %lu \n", 801The maximum limit is: 801
+)                               = 27
+strcasecmp("limit", "cd")                                                 = 9
+strcasecmp("limit", "chdir")                                              = 9
+strcasecmp("limit", "history")                                            = 4
+fork()                                                                    = 35
+wait(0 <no return ...>
+--- SIGCHLD (Child exited) ---
+<... wait resumed> )                                                      = 35
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: history
+)   = 8
+strtok("history\n", "\n")                                                 = "history"
+strcasecmp("history", "Y")                                                = -17
+strcasecmp("history", "y")                                                = -17
+strlen("history")                                                         = 7
+strcasecmp("history", "\n")                                               = 94
+strdup("history")                                                         = 0x7fffe3657ca0
+strtok_r(0x7fffe3657c20, 0x7ffc3520141c, 0x7fffeaf8d640, 0x7fffe3657ca0)  = 0x7fffe3657c20
+strtok_r(0x7fffe3657c27, 0x7ffc3520141c, 0x7fffeaf8d640, 7)               = 0
+strcasecmp("history", "limit")                                            = -4
+strcasecmp("history", "cd")                                               = 5
+strcasecmp("history", "chdir")                                            = 5
+strcasecmp("history", "history")                                          = 0
+printf("   %u", 1)                                                        = 4
+printf("  %s \n", "echo hello"   1  echo hello
+)                                           = 14
+printf("   %u", 2)                                                        = 4
+printf("  %s \n", "ls"   2  ls
+)                                                   = 6
+printf("   %u", 3)                                                        = 4
+printf("  %s \n", "cd change"   3  cd change
+)                                            = 13
+printf("   %u", 4)                                                        = 4
+printf("  %s \n", "chdir changefurther"   4  chdir changefurther
+)                                  = 23
+printf("   %u", 5)                                                        = 4
+printf("  %s \n", "ls"   5  ls
+)                                                   = 6
+printf("   %u", 6)                                                        = 4
+printf("  %s \n", "limit"   6  limit
+)                                                = 9
+printf("   %u", 7)                                                        = 4
+printf("  %s \n", "limit 800"   7  limit 800
+)                                            = 13
+printf("   %u", 8)                                                        = 4
+printf("  %s \n", "\\limit 500 500"   8  \limit 500 500
+)                                      = 18
+printf("   %u", 9)                                                        = 4
+printf("  %s \n", "limit"   9  limit
+)                                                = 9
+printf("   %u", 10)                                                       = 5
+printf("  %s \n", "history"   10  history
+)                                              = 11
+printf("%s", "Input: ")                                                   = 7
+signal(SIGINT, 0x7ffc35200c0a)                                            = 0x7ffc35200c0a
+signal(SIGTSTP, 0x7ffc35200c24)                                           = 0x7ffc35200c24
+getline(0x7fffeaf8d688, 0x7fffeaf8d690, 0x7ffc34deba00, 0x7fffeaf8d690Input: ^C <no return ...>
+--- SIGINT (Interrupt) ---
+puts("\nWould you like to exit the shel"...
+Would you like to exit the shell? [Y/N]:
+)                              = 42
+Y
+<... getline resumed> )                                                   = 2
+strtok("Y\n", "\n")                                                       = "Y"
+strcasecmp("Y", "Y")                                                      = 0
+strcasecmp("Y", "y")                                                      = 0
+exit(0 <no return ...>
++++ exited (status 0) +++
+aleks@DESKTOP-IAEL188:/mnt/c/Users/aleks/eclipse-workspace/ECSE427A1$

@@ -1,0 +1,4 @@
+Aleksas Murauskas 260718389
+
+Average Test 1 Score: 0 Errors
+Average Test 2 Score: 5 to 18 Errors
